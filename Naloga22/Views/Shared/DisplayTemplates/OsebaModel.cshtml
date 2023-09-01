@@ -1,0 +1,27 @@
+﻿@using Naloga22
+@model Oseba;
+
+<div class="container">
+    <table class="table table-hover">
+        <thead>
+        <td>Ime</td>
+        <td>Priimek</td>
+        <td>Datum rojstva</td>
+        <td>EMŠO</td>
+        <td>Kraj rojstva</td>
+        <td>Email</td>
+        <td>Geslo1</td>
+        <td>Geslo2</td>
+        </thead>
+        <tr>
+            <td>@Model.Ime</td>
+            <td>@Model.Priimek</td>
+            <td>@Model.Datum_rojstva</td>
+            <td>@Model.EMSO</td>
+            <td>@Model.Kraj_rojstva</td>
+            <td>@Model.Email</td>
+            <td>@Model.geslo1</td>
+            <td>@Model.geslo2</td>
+        </tr>
+    </table>
+</div>

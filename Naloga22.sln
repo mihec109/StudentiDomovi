@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Naloga22", "Naloga22\Naloga22.csproj", "{5038E5F4-9823-4872-8944-0AF44B69970D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{E446C03D-2A5F-4DAF-B6C4-56C650832EB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5038E5F4-9823-4872-8944-0AF44B69970D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5038E5F4-9823-4872-8944-0AF44B69970D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5038E5F4-9823-4872-8944-0AF44B69970D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5038E5F4-9823-4872-8944-0AF44B69970D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E446C03D-2A5F-4DAF-B6C4-56C650832EB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E446C03D-2A5F-4DAF-B6C4-56C650832EB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E446C03D-2A5F-4DAF-B6C4-56C650832EB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E446C03D-2A5F-4DAF-B6C4-56C650832EB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86B9B596-9E53-449A-9244-36A4ACE4517D}
+	EndGlobalSection
+EndGlobal

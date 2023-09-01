@@ -1,0 +1,35 @@
+﻿@using Naloga22
+@model Studenti;
+@{
+    ViewData["Title"] = "Registracija2";
+}
+<link rel="stylesheet" href="~/css/site.css" />
+
+<div class="text-center">
+    <h1 class="display-4">Validirana registracija</h1>
+    @using (Html.BeginForm("efms", "Studenti", FormMethod.Post))
+    {
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div>
+            <p>
+                Ime:
+                @Html.EditorFor(m => m.Ime)
+                @Html.ValidationMessageFor(m => m.Ime, "", new { @class = "text-danger" })<br><br>
+            </p>
+
+            <p>
+                Priimek:
+                @Html.EditorFor(m => m.Priimek)
+                @Html.ValidationMessageFor(m => m.Priimek, "", new { @class = "text-danger" })<br><br>
+            </p>
+
+            <p>
+                Vpisna stevilka:
+                @Html.TextBoxFor(m => m.Vpisna_stevilka, new { @type = "range", min = 1, max = 100, value = "50"})
+                @Html.ValidationMessageFor(m => m.Vpisna_stevilka, "", new { @class = "text-danger" })<br><br>
+            </p>
+
+        </div>
+        <input value="Next" type="submit">
+    }
+</div>

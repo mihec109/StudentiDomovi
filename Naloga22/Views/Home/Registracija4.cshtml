@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Registracija4";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Uspešna registracija!</h1>
+    <p>Vaši podatki: </p>
+
+    <form action="Registracija4" method="post">
+        <label>Ime: @TempData["Ime"]</label> <br />
+        <label>Priimek: @TempData["Priimek"]</label> <br />
+        <label>Datum rojstva: @TempData["Datum rojstva"]</label> <br />
+        <label>EMŠO: @TempData["EMSO"]</label> <br />
+        <label>Starost: @TempData["Starost"]</label> <br />
+        <label>Naslov: @TempData["Naslov"]</label> <br />
+        <label>Poštna številka: @TempData["Postna_stevilka"]</label> <br />
+        <label>Pošta: @TempData["Posta"]</label> <br />
+        <label>Države: @TempData["Drzava"]</label> <br />
+        <label>E-pošta: @TempData["E-posta"]</label> <br />
+        <label>Geslo: @TempData["Geslo"]</label> <br />
+
+    </form>
+
+</div>

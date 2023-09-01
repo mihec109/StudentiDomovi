@@ -1,0 +1,40 @@
+﻿
+@model Naloga22.Models.Studenti
+@{
+    ViewData["Title"] = "Create Studenti";
+}
+<h2>Create</h2>
+<h4>Studenti</h4>
+<hr />
+<form asp-action="b" class="form-horizontal">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label class="control-label">Ime</label>
+        <input id="Ime" asp-for="Ime" class="form-control" />
+        <span asp-validation-for="Ime" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Priimek</label>
+        <input id="Priimek" asp-for="Priimek" class="form-control" />
+        <span asp-validation-for="Priimek" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Vpisna_stevilka</label>
+        <input id="Vpisna_stevilka" asp-for="Vpisna_stevilka" class="form-control" />
+        <span asp-validation-for="Vpisna_stevilka" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input id="Submit" type="submit" value="Submit" class="btn bg-primary" />
+
+    </div>
+</form>
+@*@{
+    if (@TempData["Msg"] != null)
+    {
+        <script>
+
+                alert('@TempData["msg"]')
+        </script>
+
+    }
+}*@

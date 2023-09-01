@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Registracija";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Registracija</h1>
+    <p>Tukaj se lahko registrirate</p>
+
+    <form action="Registracija" method="post">
+        <label>Ime: </label>
+        <input type="text" id="Ime" name="Ime"><br><br>
+        <label>Priimek: </label>
+        <input type="text" id="Priimek" name="Priimek"><br><br>
+        <label>Datum rojstva: </label>
+        <input type="date" value="2022-03-15" min="1950-01-01" max="2021-12-31" id="Datum_rojstva" name="Datum_rojstva"><br><br>
+        <label>EMŠO: </label>
+        <input type="text" id="EMSO" name="EMSO"><br><br>
+        <label>Starost: </label>
+        <input type="range" min="1" max="100" value="50" class="slider" id="Starost" name="Starost">
+        <input value="Next" type="submit">
+    </form>
+
+</div>

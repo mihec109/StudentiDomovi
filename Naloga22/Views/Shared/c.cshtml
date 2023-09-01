@@ -1,0 +1,41 @@
+﻿@model List<Studenti>
+
+<h1>Student</h1>
+
+<table>
+    <tr>
+        <th>Ime</th>
+        <th>Priimek</th>
+        <th>Vpisna_stevilka</th>
+    </tr>
+    @foreach (var student in Model)
+    {
+        <tr>
+            <td>@student.Ime</td>
+            <td>@student.Priimek</td>
+            <td>@student.Vpisna_stevilka</td>
+        </tr>
+    }
+
+</table>
+
+@using (Html.BeginForm("Delete", "Izpis", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Izbrisi po vpisni stevilki</h4>
+        <hr />
+
+        <input type="text" id="Vpisna_Stevilka" name="Vpisna_Stevilka"><br><br>
+
+        <input id="Submit" type="Submit" value="Delete" />
+    </div>
+
+}
+@if (TempData["msg_Vide"] != null)
+{
+    <script>
+        alert('@Html.Raw(TempData["msg_Vide"])')
+    </script>
+}

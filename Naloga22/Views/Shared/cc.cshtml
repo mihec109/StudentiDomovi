@@ -1,0 +1,34 @@
+﻿@model List<Domovi>
+
+<h1>Domovi</h1>
+
+<table>
+    <tr>
+        <th>Leto_zgradnje</th>
+        <th>Naslov</th>
+        <th>Stevilka</th>
+    </tr>
+    @foreach (var domovi in Model)
+    {
+        <tr>
+            <td>@domovi.Leto_zgradnje</td>
+            <td>@domovi.Naslov</td>
+            <td>@domovi.Stevilka</td>
+        </tr>
+    }
+</table>
+
+@using (Html.BeginForm("Delete", "Izpis2", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Izbrisi po naslovu</h4>
+        <hr />
+
+        <input type="text" id="Naslov" name="Naslov"><br><br>
+
+        <input type="Submit" value="Delete" />
+    </div>
+
+}
